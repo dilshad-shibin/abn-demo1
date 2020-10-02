@@ -1,0 +1,1003 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABN Pharmacy</title>
+    <meta name="theme-color" content="#1f806b82">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Fontawesome Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap     -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+
+ <style>
+            
+    .message{
+            width:250px;
+            height:80px;
+            background:#28a746ec;
+            z-index:500;
+            color:white;
+            position:fixed;
+            top:0;
+            right:-250px;
+            padding:5px;
+            padding-left:10px;
+            top:120px;
+            
+        }
+        .message p{
+            margin:0;
+        }
+        .message p span{
+            display:block;
+            font-size:30px;
+            font-weight:bold;
+        }
+            .pro .owl-nav.disabled{
+                display: block!important;
+            }
+            .pro .owl-nav button.owl-prev{
+                font-size: 4rem;
+                position: absolute;
+                top: 0;
+                transform: translateY(-50%);
+                top: 40%;
+                left: -55px;
+            }
+            
+            .pro .owl-nav button.owl-next{
+                font-size: 4rem;
+                position: absolute;
+                top: 0;
+                transform: translateY(-50%);
+                top: 40%;
+                right: -55px;
+            }
+                        
+            @media(max-width:768px){
+                .pro .owl-nav button.owl-prev{
+                display: none;
+            }
+            
+            .pro .owl-nav button.owl-next{
+                display: none;
+            }
+            }
+        </style>
+</head>
+<body>
+    <!-- Side Menu -->
+    <div id="sidemenu">
+        <div class="close_menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="#home" class="active2">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#product">PRODUCT</a></li>
+            <li><a href="#companies">COMPANIES</a></li>
+            <li><a href="#team">TEAMS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </div>
+
+
+    <!-- header section -->
+    <div class="strip">
+        <div class="container">
+            <div class="info">
+                <p><i class="fas fa-mobile-alt"></i> &nbsp;(0484) 2630444, 2621214, 6493252</p>
+            </div>
+            <div class="strip_icons">
+                <p><i class="far fa-envelope"></i> &nbsp;abnbusinessgroupaly@gmail.com &nbsp;</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <header class="header">
+        <div class="container">
+            <div class="header_logo"><img src="assets/images/logo-png.png"></div>
+            <div class="header_list">
+                <ul>
+                    <li><a href="#home" class="nav-link active1">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#service" class="nav-link">Service</a></li>
+                    <li><a href="#product" class="nav-link">Product</a></li>
+                    <li><a href="#companies" class="nav-link">Companies</a></li>
+                    <li><a href="#team" class="nav-link">Teams</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div id="toggle_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+
+
+ <!-- popup -->
+    <div class="popup-overlay" style="display: none;">
+        <div class="popup">
+
+            <h2 class="size1" style=" margin:0px; text-align: center;">Everything Begin
+                With<br /> a Hello :)</h2>
+
+            <br />
+            <img class="close_pop" src="assets/images/icons8-multiply-filled-100.png" width="25" alt="">
+
+           <form action="mailer2.php" method="post">
+                <div class="popup-form-group">
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                </div>
+
+                <div class="popup-form-group">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                </div>
+
+                <div class="popup-form-group">
+                    <input type="text" name="email" id="email" placeholder="Email Adress" required>
+                </div>
+                <div class="popup-form-group">
+                    <input type="text" name="number" id="number" placeholder="Phone / Mobile" required>
+                </div>
+                <div class="form-group" hidden>
+                  <input type="text" name="subject" value="" id="subject" class="form-control" placeholder="">
+                </div>
+                <div class=" textarea">
+                    <textarea rows="4" type="text" name="message" id="message" placeholder="Text Message" required></textarea>
+                </div>
+                <button type="submit" href="" style="margin-top: 30px; margin-left:5px; border:none; outline:none;" class="herobtn2">Send &nbsp; <i
+                        class="fas fa-angle-right"></i></button>
+         </form>
+        </div>
+    </div>
+    <!-- popup close -->
+
+        <!-- banner section -->
+        <section id="home">
+            <div class="banner_container">
+                <div class="caption">
+                    <h1>ABN Pharmacy & Co Welcomes You</h1>
+                    <p>ABN Business group and its associates have found their position among the leading pharmaceutical distribution companies in the industry.
+                    </p>
+                    <a href="#contact" class="banner_btn">Contact &nbsp;<i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About section -->
+        <section id="about" style="margin-top:0px; background: #eee;padding-bottom: 50px; padding-top: 50px; ">
+            <div class="about_container container">
+                <div class="about_text col-md-6">
+                    <h2>Who We Are</h2>
+                    <p>  ABN Business Group was founded in 2006, since then it has become one of the leading and most reputable pharmaceutical companies in the industry. We specialize in the procurement, storage and distribution of pharmaceuticals and healthcare products. With the essential experience and expertise in the industry, we have attained the ability to offer seamless supply chain management.Our facilities, extensive service history, and efficient logistics management will give you the best in storage, chain services and distribution sector.
+                        </p>
+                </div>
+                <div class="adout_image col-md-6">
+                    <img src="assets/images/ca.png" style="width:100%;">
+                </div>
+            </div>
+        </section>
+
+
+
+
+ 
+
+
+        <!-- Service section -->
+        <section id="service" style=" background: white; padding-bottom: 50px;">
+            <h2 class="headings">Our Services</h2>
+            <div class="container">
+                <!-- <a href="" class=""> -->
+                <div class="service_section fixed_sidebutton">
+                    <img src="assets/images/icons8-business-64.png">
+                    <p>Distribution</p>
+                    <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus neque sodales risus gravida bibendum. Pellentesque suscipit tristique porta. Phasellus vel ipsum eu mauris sodales iaculis eu sit amet ante.
+                        <ul>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                    </ul>
+                </span>
+                <span class="serv_right_img"><img src="assets/images/icons8-right-100.png"></span>
+                </div>
+            <!-- </a> -->
+
+            <!-- <a href="" class="fixed_sidebutton"> -->
+                <div class="service_section fixed_sidebutton">
+                    <img src="assets/images/icons8-refund-64.png">
+                    <p>Carrying & Forwarding</p>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus neque sodales risus gravida bibendum. Pellentesque suscipit tristique porta. Phasellus vel ipsum eu mauris sodales iaculis eu sit amet ante. 
+                        <ul>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>                    
+                    </ul>
+                </span>
+                <span class="serv_right_img"><img src="assets/images/icons8-right-100.png"></span>
+                </div>
+                <!-- </a> -->
+
+                <!-- <a href="" class="fixed_sidebutton"> -->
+                <div class="service_section fixed_sidebutton">
+                    <img src="assets/images/icons8-ledger-64.png">
+                    <p>C.S.A</p>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus neque sodales risus gravida bibendum. Pellentesque suscipit tristique porta. Phasellus vel ipsum eu mauris sodales iaculis eu sit amet ante.
+                        <ul>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                    </ul>
+                </span>
+                <span class="serv_right_img"><img src="assets/images/icons8-right-100.png"></span>
+                </div>
+                <!-- </a> -->
+
+                <!-- <a href="" class="fixed_sidebutton"> -->
+                <div class="service_section fixed_sidebutton">
+                    <img src="assets/images/icons8-administrative-tools-64.png">
+                    <p>Storage & Warehousing</p>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus neque sodales risus gravida bibendum. Pellentesque suscipit tristique porta. Phasellus vel ipsum eu mauris sodales iaculis eu sit amet ante.
+                        <ul>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>        
+                    </ul>
+                </span>
+                <span class="serv_right_img"><img src="assets/images/icons8-right-100.png"></span>
+                </div>
+                <!-- </a> -->
+            </div>
+
+            <div class="col-md-12 serv_btn_div" style="display:none">
+               <a href="#" class="service_btn">More &nbsp; <i class="fas fa-angle-right"></i></a>
+            </div>
+
+        </section>
+
+        <!-- Center Countdown section -->
+        <section>
+           <div class="parallax" data-paralasic=".1">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="number">
+                        <h3 class="timer" data-count="5">0</h3>
+                        <p>Year Of Experiance</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="number">
+                        <h3 class="timer" data-count="24000">0</h3>
+                        <p>Products Delivered</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="number">
+                        <h3 class="timer" data-count="110">0</h3>
+                        <p>Company Products</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="number">
+                        <h3 class="timer" data-count="1600">0</h3>
+                        <p>Pharmacies Partners</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- close countdown -->
+
+
+        <!-- Product Section -->
+        <section id="product">
+            <div class="Product-section">
+                <div class="container">
+                    <h2 class="titles">Our Products</h2>
+                    <div class="explore">
+                        <div class="owl-carousel pro3">
+                             <div class="item">
+                                <div class="explre_column">
+                                    <img src="assets/images/product1.jpg" alt="">
+                                    <div class="explore_content">
+                                        <p>Product 1</p>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        <a href="productlist.html">View</a>
+                                    </div>
+                                </div>
+                           </div><!-- close item -->
+                           <div class="item">
+                                <div class="explre_column">
+                                    <img src="assets/images/product2.jpg" alt="">
+                                    <div class="explore_content">
+                                        <p>Product 2</p>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        <a href="productlist.html" c>View</a>
+                                    </div>
+                                </div>
+                           </div><!-- close item -->
+                           <div class="item">
+                                <div class="explre_column">
+                                    <img src="assets/images/product3.jpg" alt="">
+                                    <div class="explore_content">
+                                        <p>Product 3</p>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        <a href="productlist.html" style="text-decoration: none;">View</a>
+                                    </div>
+                                </div>
+                           </div><!-- close item -->
+                           <div class="item">
+                                <div class="explre_column">
+                                    <img src="assets/images/product2.jpg" alt="">
+                                    <div class="explore_content">
+                                        <p>Product 4</p>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                        <a href="productlist.html" style="text-decoration: none;">View</a>
+                                    </div>
+                                </div>
+                           </div><!-- close item -->
+                        </div>
+                        <a href="productlist.html" style="text-decoration: none;">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close Product section -->
+
+
+        <!-- vission/mission section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="slider ml-lg-5 ml-md-5 mt-5 py-lg-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="imgContainer ml-lg-n5 mt-lg-0 mt-md-0 ml-md-n5 mt-n5">
+                                        <div class="image"><img src="assets/images/vision.jpg"/></div>
+                                        <div class="image"><img src="assets/images/mission.jpg"/></div>
+                                        <div class="image"><img src="assets/images/choose.jpg"/></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <!-- slider -->
+                                    <div id="productSlider" class="carousel slide carousel-fade pr-lg-5 py-lg-0 py-4" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="content">
+                                                    <div class="title"> Our Vission</div>
+                                                    <div class="desc">
+                                                          
+                                                          <ul>
+                                                              <li><i class="fas fa-heart"></i> To serve the community by enhancing health and well-being by sourcing and supplying affordable and quality medicine.</li>
+                                                              <li><i class="fas fa-heart"></i> To provide excellent service to our partners by giving top priority and commitment.</li>
+                                                              <li><i class="fas fa-heart"></i> To become one of the most trusted and admired pharmaceuticals suppliers in India.</li>
+                                                          </ul>
+                                                    </div>
+                                                </div>
+                                            </div><!-- carousel-item -->
+                                            <div class="carousel-item">
+                                                <div class="content">
+                                                    <div class="title"> Our Mission</div>
+                                                    <div class="desc">
+                                                          We aspire to raise the benchmarks in the industry by providing top-notch products and service to the community and our partners. Our purpose is to offer the healthcare fraternity by showing a prime example of caring and nurturing a robust community.
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div><!-- carousel-item -->
+                                            <div class="carousel-item">
+                                                <div class="content">
+                                                    <div class="title"> Why Choose Us</div>
+                                                    <div class="desc">
+                                                          We are fully integrated to work together for ensuring fast turnaround. As an established and reputed company, we have built up a tremendous customer-base that includes pharmacies, chemists, wholesalers, public and private sector hospitals and clinics
+                                                          <ul>
+                                                              <li><i class="fas fa-handshake"></i> We keep ourselves in loop of the latest advancements in the pharmaceutical distribution trade in India.</li>
+                                                              <li><i class="fas fa-handshake"></i> With the comprehension in the state-of-the-art technology, the unfettered execution of our operations is assured.</li>
+                                                              <li><i class="fas fa-handshake"></i> With the 70 employee’s man power and six delivery vans, the group maintains its regular operations smooth and punctual.</li>
+                                                              <li><i class="fas fa-handshake"></i> We have tie-ups with many reputed parcel and courier services.</li>
+                                                          </ul>
+                                                    </div>
+                                                </div>
+                                            </div><!-- carousel-item -->
+                                        </div>
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators indicators">
+                                            <li data-target="#productSlider" data-slide-to="0" class="active"></li>
+                                            <li data-target="#productSlider" data-slide-to="1"></li>
+                                            <li data-target="#productSlider" data-slide-to="2"></li>
+                                        </ol>
+                                        <!-- /Indicators -->
+                                    </div>
+                                    <!-- /Slider -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- close vission/mission section -->
+
+
+
+<!-- major companies -->
+<section id="companies">
+
+  <div class="container clients">
+
+    <div class="glry-head sub-titles">
+
+      <h2>Major Companies</h2>
+
+      <img src="assets/images/line2-image.png" alt="image" class="img-fluid" style="width:20%; "> </div>
+
+    <p class="font-big">ABN Group has pleasure in mentioning names of some of the Leading Multi National and
+
+      Indian Companies with whom we enjoy great business relationship.</p>
+
+  </div>
+
+  <div class="container clients text-center">
+
+    <div class="row w-100">
+
+      <div class="col"><a href="clients.html"><img src="assets/images/clientslogo.jpg" class="img-fluidmajor" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo2.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo3.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo4.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo5.jpg" class="img-fluid" alt="logo"></a></div>
+
+    </div>
+
+    <div class="row w-100">
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo6.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo7.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo8.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo9.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="assets/images/clientslogo10.jpg" class="img-fluid" alt="logo"></a></div>
+
+    </div>
+
+    <div class="row w-100">
+
+      <div class="col"><a href="#"><a href="#"><img src="http://demo.rhombusitsolutions.com/abn-php/asset/img/logo1.jpg" class="img-fluidmajor" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="http://demo.rhombusitsolutions.com/abn-php/asset/img/logo2.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="http://demo.rhombusitsolutions.com/abn-php/asset/img/logo3.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="http://demo.rhombusitsolutions.com/abn-php/asset/img/logo4.jpg" class="img-fluid" alt="logo"></a></div>
+
+      <div class="col"><a href="#"><img src="http://demo.rhombusitsolutions.com/abn-php/asset/img/logo5.jpg" class="img-fluid" alt="logo"></a></div>
+
+
+    </div>
+
+  </div>
+</section>
+
+<!-- close major companies -->
+
+
+
+<!-- team section -->
+    <div id="team" class="section md-padding">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- Section header -->
+                <div class="section-header text-center">
+                    <h2 class="title">Our Team</h2>
+                </div>
+                <!-- /Section header-->
+
+                <!-- team -->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="team">
+                        <div class="team-img">
+                            <img class="img-responsive" src="assets/images/pharmacist2.jpeg" alt="">
+                            <div class="overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <p>Managing Partner</p>
+                            <h3>NAZAR P.K</h3>
+                            <div class="service-small-desc">
+                                <p>Under the leadership of Mr. Nazar P.K, ABN Business Group is thriving towards an effulgent future. Before spearheading the organization he was working in PEPSI, UAE for around a decade where he gathered hands-on experience in sales and distribution. With his 17 years of exposure and experience in pharmaceutical wholesale and retail markets, he has attained the prowess and proficiency.</p>
+                                <a href="#" class="text-center" style="text-decoration: none;color: blue;">Read More</a>
+                            </div>
+                            <!-- <span>Pharmacist</span> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /team -->
+
+                <!-- team -->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="team">
+                        <div class="team-img">
+                            <img class="img-responsive" src="assets/images/pharmacist2.jpeg" alt="">
+                            <div class="overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <p>Partner</p>
+                            <h3>MANAF P.K</h3>
+                            <div class="service-small-desc">
+                                <p>A Charted Accountant by profession, Mr. Manaf P.K. is a veteran in the finance and accounting sector. His 20 years worth of insight is convenient and practical for the unfettered functioning of the business. His admirable skills in administration and management have contributed immensely to the structure.</p>
+                                <a href="#" class="text-center" style="text-decoration: none;color: blue;">Read More</a>
+                            </div>
+                            <!-- <span>Pharmacist</span> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /team -->
+
+                <!-- team -->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="team">
+                        <div class="team-img">
+                            <img class="img-responsive" src="assets/images/pharmacist2.jpeg" alt="">
+                            <div class="overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <p>Partner</p>
+                            <h3>BABU P.K</h3>
+                            <div class="service-small-desc">
+                                <p>Mr. Babu P.K. is one of the partners of the group. He has 20 years of experience in the hospitality industry and 8 years of service in pharmaceutical wholesale industry. Under his firm guidance we have navigated over the course unperturbed.</p>
+                                <a href="#" class="text-center" style="text-decoration: none;color: blue;">Read More</a>
+                            </div>
+                            <!-- <span>Pharmacist</span> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /team -->
+
+                 <!-- team -->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="team">
+                        <div class="team-img">
+                            <img class="img-responsive" src="assets/images/pharmacist2.jpeg" alt="">
+                            <div class="overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <p>Partner</p>
+                            <h3>ABEESH VARGHESE</h3>
+                            <div class="service-small-desc">
+                                <p>Mr. Abeesh Varghese has a diploma in electrical engineering but intrigued by the evolution of healthcare community, he had chosen to lend his caliber to the pharmaceutical industries. Mr. Abeesh Varghese has 19 years of experience in wholesale and retail pharmaceuticals and his innovative thinking has assisted to reach new horizons.</p>
+                                <a href="#" class="text-center" style="text-decoration: none;color: blue;">Read More</a>
+                            </div>
+                            <!-- <span>Pharmacist</span> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /team -->
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </div>
+    <!-- /Team -->
+<!-- end team section -->
+
+
+<!-- contact section -->
+<section id="contact">
+    <div class="content-wrap">
+        <div class="map-wrap">
+            <iframe frameborder="0" height="550" src="https://maps.google.com/maps?hl=en&amp;q=3-5+Rawson+St%2C+Auburn+NSW+2144%2C+Australia&amp;t=m&amp;z=14&amp;output=embed" style="border:0" width="100%"></iframe>
+        </div>  
+        <div class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-form">
+                        <h5 class="sub_title">Send us a Message</h5>
+                        <form action="" class="contact">
+                            <div class="form-item">
+                                <label for="">Full Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-item">
+                                <label for="">Email Id</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-item">
+                                <label for="">Phone</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-item">
+                                <label for="">Subject</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-item">
+                              <label for="">Message</label>
+                              <textarea id="edit-message" name="message" rows="5" cols="60" class="form-textarea required resize-vertical"></textarea>
+                             </div>
+                            <div class="form-item">
+                              <input class="button form-submit btn_stylish3"  type="submit" name="op" value="Send Message">
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-md-4 col-contact">
+                        <h5 class="sub_titles">Contact Informations</h5>
+                        <address>
+                            19/685-3, ABN Arcade, Great Lane Road,<br> Bazar P.O.,Aluva,<br>
+                            Ernakulam - 683 101<br>
+                            Ph: 0484-2630444, 2621214, 6493252<br>
+
+                            <h6 class="abnmail" style="font-size: 14px;line-height: 20px;font-weight: 400">E-mail: abnbusinessgroupaly@gmail.com<br>
+                            <!-- <a href="mailto:sujithpharma@gmail.com" class="address_mail">abnbusinessgroupaly@gmail.com</h6></a> -->
+                       </address>
+                       <br>
+                       <h5 class="sub_titles">Opening Hours</h5>
+                       <span class="font-clr"><i class="far fa-clock"></i> 9am to 8pm</span><br>
+                       <span class="font-clr">Monday - Saturday</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end contact section -->
+
+
+<!--start footer section--->
+<section id="footer">
+
+  <div class="container text-center">
+
+    <div class="footer-menu">
+
+      <ul>
+
+         <li class="nav-item active"> <a class="nav-link active" href="#">HOME</a> </li>
+
+                  <li class="nav-item "> <a class="nav-link " href="#">ABOUT</a> </li>
+
+                  <li class="nav-item"> <a class="nav-link " href="#">SERVICE</a> </li>
+
+                  <li class="nav-item"> <a class="nav-link " href="#">PRODUCT</a> </li>
+
+                  <li class="nav-item active"> <a class="nav-link " href="http://demo.rhombusitsolutions.com/abn-php/index.php/Abnbusiness/contact">CONTACT</a> </li></ul>      
+
+        <hr>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-12- col-md-12 col-lg-12">
+
+        <div class="footer-brand"> <img src="http://demo.rhombusitsolutions.com/abn-php/asset/img/logo-w.png" alt="image" class="img-fluid" style="max-width: 100% !important; max-height: 0%; color: #003366;">
+
+          <p class="footer-address" style="color: #000; padding-top: 10px; line-height: 20px;">19/685-3, ABN Arcade, Great Lane Road, Bazar P.O.,<br>
+
+            Aluva, Ernakulam - 683 101<br>
+
+            Ph: 0484-2630444, 2621214, 6493252<br>
+
+            E-mail: abnbusinessgroupaly@gmail.com</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright" style="background-color: #102838; text-align: center; color: #fff; height:35px;">
+
+    <div class="container">
+
+      <div class="copyright-cnt">All Rights Reserved by  <a href="rhombusitsolutions.com" >&nbsp;Rhombus It Solutions</a>  </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- back to top -->
+<button id="back-to-top"><i class="fas fa-angle-up"></i></button>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <!-- tween max (green sock) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <!-- owl -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <!-- countTo js -->
+    <script src="assets/js/countTo.js"></script>
+    <!-- vission/mission -->
+    <script src="assets/js/vission.js"></script>
+    <!-- curtail ja -->
+    <script src="assets/js/jquery.curtail.js"></script>
+
+
+
+
+    <script>
+            // header strip
+    
+            $(window).on('scroll', () => {
+                if ($(window).scrollTop() > 50) {
+                    $('.header_strip').css({
+    
+                    })
+                    $('.header').css({
+                        top: "0px",
+                        transition: "0.3s"
+                    })
+    
+                } else {
+                    $('.header_strip').removeClass('header_strip_disable');
+                    $('.header').css({
+                        top: "30px",
+                        transition: "0.3s"
+                    })
+                }
+            })
+        </script>
+    
+    
+
+
+    <script>
+    //  back-to-top scrolling //
+      $(window).on("scroll",function(){
+        if($(window).scrollTop()>300){
+            $('#back-to-top').fadeIn();
+        }else{
+            $('#back-to-top').fadeOut();
+        }
+      });
+
+      $("#back-to-top").click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+      });
+   </script>
+
+    
+    
+    
+    
+    
+    
+  
+
+    <script>
+        //  $(document).ready(function () {
+        //             var owl = $('.owl-carousel');
+        //             owl.owlCarousel({
+        //                 items: 3,
+        //                 loop: true,
+        //                 margin: 10,
+        //                 autoplay: true,
+        //                 autoplayTimeout: 2000,
+        //                 autoplayHoverPause: false
+        //             });
+        //         })
+
+        
+//        anchor scroll
+        
+        $('.header_list a').click(function(e){
+  e.preventDefault();
+  var target = $($(this).attr('href'));
+  if(target.length){
+    var scrollTo = target.offset().top - 75;
+    $('body, html').animate({scrollTop: scrollTo+'px'}, 100);
+  }
+});
+        
+        
+        
+        
+        
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            autoplayTimeout: 2500,
+            autoplay: true,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: true
+                }
+            }
+        })
+    </script>
+
+    <script>
+        (function () {
+            $('#toggle_menu').click(() => {
+                $('#sidemenu').addClass('side_active');
+            })
+            $('.close_menu i').click(() => {
+                $('#sidemenu').removeClass('side_active');
+            })
+
+        })();
+
+
+        $('#sidemenu ul li a').click(function () {
+            $('#sidemenu ul li a').removeClass('active1');
+            $(this).addClass('active1');
+            $('#sidemenu').removeClass('side_active');
+        })
+
+
+        $('.header_list ul li a').click(function () {
+            $('.header_list ul li a').removeClass('active1');
+            $(this).addClass('active1');
+
+        })
+
+        $('#sidemenu ul li a').click(function () {
+            $('#sidemenu ul li a').removeClass('active2');
+            $(this).addClass('active2');
+
+        })
+
+
+
+        $(document).ready(function(){
+  $(".fixed_sidebutton").click(function(){
+    $(".popup-overlay").show();
+  });
+
+  $(".close_pop").click(function(){
+    $(".popup-overlay").hide();
+  });
+});
+
+
+
+
+
+$(document).ready(function(){
+    $('.message').css({right : "0",transition : "0.3s",opacity : 1});
+    setTimeout(()=>{
+        $('.message').css({
+            right : "-250px",
+            transition : "0.3s",
+            opacity : 0,
+        })
+    },3000)
+    }) 
+    </script>
+
+
+<!-- countto js -->
+<script>
+  var x = 0;
+$(window).scroll(function() {
+
+  var oTop = $('.parallax').offset().top - window.innerHeight;
+  if (x == 0 && $(window).scrollTop() > oTop) {
+    $('.timer').each(function() {
+      var $this = $(this),
+          countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+        countNum: countTo
+      },
+                 {
+        duration: 2000,
+        easing: 'swing',
+        step: function() {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function() {
+          $this.text(this.countNum);
+        }
+      });
+    });
+    x = 1;
+  }
+});
+</script>
+
+<!-- curtail text -->
+<script>
+
+$(function () {
+
+            $('.service-small-desc').curtail({
+
+                limit: 50
+
+            });
+
+        }());
+
+</script>
+
+</body>
+
+</html>
